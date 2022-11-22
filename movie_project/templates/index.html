@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<U><h2>LIST OF MOVIES</h2></U><br>
+{% for i in result %}
+<h3> <a href="movie/{{i.id}}">{{i.name}}</a></h3><br>
+
+{% endfor %}
+</body>
+</html>

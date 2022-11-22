@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>movie details</title>
+</head>
+<body>
+<b><h1><img src="{{movie.img.url}}"><br>{{movie.name}}({{movie.year}})</h1><br>
+{{movie.desc}}<br>
+    <a href="{% url 'movieapp:update' movie.id %}">update</a>
+     <a href="{% url 'movieapp:delete' movie.id %}">delete</a>
+    </b>
+</body>
+</html>
